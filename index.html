@@ -11,284 +11,290 @@
     <link rel="stylesheet" href="css/animate.css">
 
     <style>
+        @media only screen  and (max-width: 1366px) {
+            body {
+                padding: 0;
+                margin: 0;
 
-        body {
-            padding: 0;
-            margin: 0;
+                /*max-width: 2000px;*/
+            }
 
-            /*max-width: 2000px;*/
-        }
+            .container {
+                display: none;
+            }
 
-        .container {
-            display: none;
-        }
+            .header {
+                font-size: 4vw;
+                font-family: "Cormorant SC";
+                color: powderblue;
+                margin-bottom: 0;
+                text-align: center;
 
-        .header {
-            font-size: 4vw;
-            font-family: "Cormorant SC";
-            color: powderblue;
-            margin-bottom: 0;
-            text-align: center;
+            }
 
+            .twoheader {
+                font-size: 22pt;
+                font-family: "Cormorant SC";
 
-        }
+                color: white;
+                text-align: center;
+                margin: auto;
+            }
 
-        .twoheader {
-            font-size: 22pt;
-            font-family: "Cormorant SC";
+            a {
+                text-decoration: none;
+                color: white;
+            }
 
-            color: white;
-            text-align: center;
-            margin: auto;
-        }
+            a:hover {
+                /*color: deepskyblue;*/
+                color: powderblue;
+            }
 
-        a{
-            text-decoration: none;
-            color:white;
-        }
-        a:hover {
-            /*color: deepskyblue;*/
-            color:powderblue;
-        }
-        p {
-            color: white;
-            font-size: 1.4vw;
-            font-family: "Cormorant SC";
-            margin-bottom: 32px;
-            text-align: center;
-        }
+            p {
+                color: white;
+                font-size: 1.4vw;
+                font-family: "Cormorant SC";
+                margin-bottom: 32px;
+                text-align: center;
+            }
 
-        .caption {
-            /* position: absolute; */
-            /* right: 15%; */
-            bottom: 20px;
-            /* left: 15%; */
-            z-index: 10;
-            /* padding-top: 20px; */
-            /* padding-bottom: 20px; */
-            color: #fff;
-            text-align: center;
-            text-shadow: 0 1px 2px rgba(0,0,0,.6);
-        }
+            .caption {
+                /* position: absolute; */
+                /* right: 15%; */
+                bottom: 20px;
+                /* left: 15%; */
+                z-index: 10;
+                /* padding-top: 20px; */
+                /* padding-bottom: 20px; */
+                color: #fff;
+                text-align: center;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+            }
 
-        #navbar {
-            font-family: Orbitron;
-            list-style: none;
-            color: white;
-            height: 8vh;
-            width: 100%;
-        }
+            #navbar {
+                font-family: Orbitron;
+                list-style: none;
+                color: white;
+                height: 8vh;
+                width: 100%;
+            }
 
-        .ontop {
-            position: relative;
-            z-index: 10;
-        }
+            .ontop {
+                position: relative;
+                z-index: 10;
+            }
 
-        ul.topnav {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            /*background-color: skyblue;*/
-            background-color: black;
-        }
+            ul.topnav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                /*background-color: skyblue;*/
+                background-color: black;
+            }
 
-        ul.topnav li {
-            float: left;
-            margin-right: 1%;
-            font-size: 1.6vw;
-            margin-top: 0.5%;
-            margin-bottom: 0.1%;
-            margin-left: 2%;
-        }
+            ul.topnav li {
+                float: left;
+                margin-right: 1%;
+                font-size: 1.6vw;
+                margin-top: 0.5%;
+                margin-bottom: 0.1%;
+                margin-left: 2%;
+            }
 
+            ul.topnav li.right {
+                float: right;
+            }
 
+            #JSR {
+                font-family: Orbitron;
+                font-size: 1.6vw;
+                position: absolute;
+                right: 1vw;
+                top: 0.55vw;
+                z-index: 10;
+            }
 
-        ul.topnav li.right {
-            float: right;
-        }
+            #menutab:hover {
+                /*color: deepskyblue;*/
+                color: powderblue;
+            }
 
+            #hometab {
+                display: none;
+            }
 
-        #JSR {
-            font-family: Orbitron;
-            font-size: 1.6vw;
-            position: absolute;
-            right: 1vw;
-            top: 0.55vw;
-            z-index: 10;
-        }
+            #hometab:hover {
+                /*color: deepskyblue;*/
+                color: powderblue;
+            }
 
+            #abouttab {
+                display: none;
+            }
 
-        #menutab:hover {
-            /*color: deepskyblue;*/
-            color:powderblue;
-        }
+            #abouttab:hover {
+                color: deepskyblue;
+            }
 
-        #hometab {
-            display: none;
-        }
+            #servicestab {
+                display: none;
+            }
 
-        #hometab:hover {
-            /*color: deepskyblue;*/
-            color:powderblue;
-        }
+            #servicestab:hover {
+                color: deepskyblue;
+            }
 
-        #abouttab {
-            display: none;
-        }
+            #portfoliotab {
+                display: none;
+            }
 
-        #abouttab:hover {
-            color: deepskyblue;
-        }
+            #portfoliotab:hover {
+                color: deepskyblue;
+            }
 
-        #servicestab {
-            display: none;
-        }
+            #contacttab {
+                display: none;
+            }
 
-        #servicestab:hover {
-            color: deepskyblue;
-        }
+            #contacttab:hover {
+                color: deepskyblue;
+            }
 
-        #portfoliotab {
-            display: none;
-        }
+            .bg {
+                background: url("img/water-drops.gif");
+                background-size: cover;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -10;
+            }
 
-        #portfoliotab:hover {
-            color: deepskyblue;
-        }
+            #bgoverlay {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, .4);
+            }
 
-        #contacttab {
-            display: none;
-        }
+            #homecontainer {
+                /*border: 2px solid yellow;*/
+            }
 
-        #contacttab:hover {
-            color: deepskyblue;
-        }
+            #homediv {
+                width: 100%;
+                height: 89vh;
+            }
 
-        .bg {
-            background: url("img/water-drops.gif");
-            background-size: cover;
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -10;
-        }
+            .bottom-bar {
+                position: relative;
+                text-align: center;
+                font-size: 0.9em;
+                text-transform: uppercase;
+                background: transparent;
+                padding: 6vh 0 1vh 0;
+                color: white;
+                font-family: Orbitron;
+            }
 
-        #bgoverlay {
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, .4);
-        }
+            h1 {
+                font-family: "Cormorant SC";
+                color: white;
+                font-size: 24pt;
+                text-align: center;
+            }
 
-        #homecontainer {
-            /*border: 2px solid yellow;*/
-        }
+            h3 {
+                font-family: "Cormorant SC";
+                color: white;
+                font-size: 20pt;
+                text-align: center;
+            }
 
-        #homediv{
-            width:100%;
-            height: 89vh;
-        }
+            .aboutmediv {
+                position: relative;
+                /*float: left;*/
+            }
 
-        .bottom-bar {
-            position: relative;
-            text-align: center;
-            font-size: 0.9em;
-            text-transform: uppercase;
-            background: transparent;
-            padding: 6vh 0 1vh 0;
-            color: white;
-            font-family: Orbitron;
-        }
+            .services {
+                /*border: 1px solid blue;*/
+                position: relative;
+                text-align: center;
 
-        h1{
-            font-family: "Cormorant SC";
-            color: white;
-            font-size: 24pt;
-            text-align: center;
-        }
+            }
 
-        h3{
-            font-family: "Cormorant SC";
-            color: white;
-            font-size: 20pt;
-            text-align: center;
-        }
+            #fedev {
+                height: 11.5vw;
+                width: auto;
+            }
 
-        .aboutmediv {
-            position: relative;
-            /*float: left;*/
-        }
+            #bedev {
+                height: 15vw;
+                width: auto;
+            }
 
-        .services {
-            /*border: 1px solid blue;*/
-            position: relative;
-            text-align:center;
+            #custom {
+                height: 12.1vw;
+                width: auto;
+            }
 
-        }
-        #fedev {
-            height: 11.5vw;
-            width: auto;
-        }
-        #bedev {
-            height: 15vw;
-            width: auto;
-        }
-        #custom {
-            height: 12.1vw;
-            width: auto;
-        }
-        #tools {
-            height: 11.3vw;
-            width: auto;
-            /*margin-top: 3em;*/
-        }
+            #tools {
+                height: 11.3vw;
+                width: auto;
+                /*margin-top: 3em;*/
+            }
 
-        #phone {
-            height:5vw;
-        }
-        #email {
-            height:6vw;
-        }
-        #location {
-            height:6vw;
-        }
-        #contact {
-            text-align: center;
-        }
-        .carousel-inner>.item>img {
-            line-height: 1;
-            width: 70vw;
-            margin: auto;
-        }
-        .indicators {
-            /*position: fixed;*/
-            left: 50%;
-            z-index: 15;
-            width: 60%;
-            padding-left: 0;
-            /*margin-left: -30%;*/
-            text-align: center;
-            list-style: none;
-        }
+            #phone {
+                height: 5vw;
+            }
 
-        .carousel-control {
-            position: absolute;
-            top: 0;
-            bottom: -30vh;
-            left: 0;
-            width: 15%;
-            font-size: 20px;
-            color: #fff;
-            text-align: center;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-            background-color: rgba(0, 0, 0, 0);
-            filter: alpha(opacity=50);
-            opacity: 0.5;
-            height: 71vh;
-        }
+            #email {
+                height: 6vw;
+            }
 
+            #location {
+                height: 6vw;
+            }
+
+            #contact {
+                text-align: center;
+            }
+
+            .carousel-inner > .item > img {
+                line-height: 1;
+                width: 70vw;
+                margin: auto;
+            }
+
+            .indicators {
+                /*position: fixed;*/
+                left: 50%;
+                z-index: 15;
+                width: 60%;
+                padding-left: 0;
+                /*margin-left: -30%;*/
+                text-align: center;
+                list-style: none;
+            }
+
+            .carousel-control {
+                position: absolute;
+                top: 0;
+                bottom: -30vh;
+                left: 0;
+                width: 15%;
+                font-size: 20px;
+                color: #fff;
+                text-align: center;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+                background-color: rgba(0, 0, 0, 0);
+                filter: alpha(opacity=50);
+                opacity: 0.5;
+                height: 71vh;
+            }
+        }
         @media only screen  and (max-width: 1366px) {
 
             .bottom-bar {
