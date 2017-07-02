@@ -19,6 +19,17 @@
             /*max-width: 2000px;*/
         }
 
+        @font-face {
+            font-family: 'MyWebFont';
+            src: url('webfont.eot'); /* IE9 Compat Modes */
+            src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+            url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+            url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+        }
+
+
         .container {
             display: none;
         }
@@ -28,7 +39,9 @@
 
         .header {
             font-size: 4vw;
-            font-family: "Cormorant SC";
+            /*font-family: "Cormorant SC";*/
+
+            font-family: 'MyWebFont', "Cormorant SC";
             color: powderblue;
             margin-bottom: 0;
             text-align: center;
@@ -37,7 +50,8 @@
 
         .twoheader {
             font-size: 22pt;
-            font-family: "Cormorant SC";
+            /*font-family: "Cormorant SC";*/
+            font-family: 'MyWebFont', "Cormorant SC";
 
             color: white;
             text-align: center;
@@ -57,7 +71,8 @@
         p {
             color: white;
             font-size: 1.4vw;
-            font-family: "Cormorant SC";
+            /*font-family: "Cormorant SC";*/
+            font-family: 'MyWebFont', "Cormorant SC";
             margin-bottom: 32px;
             text-align: center;
         }
@@ -644,7 +659,7 @@
         <img id="custom" src="img/edit.svg">
         <br>
         <br>
-        <p>Custom, one-of-a-kind sites that deliver to your specific needs.</p>
+        <p>Custom, one-of-a-kind sites that deliver your specific needs.</p>
     </div>
 
     <div id="serviceslanguages3" class="col-sm-3 services">
